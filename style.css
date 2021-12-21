@@ -631,6 +631,9 @@ SHAPES
 */
 .shape{
     position: fixed;
+    width: 100px;
+    height: auto;
+    opacity: 0.5;
 
 }
 
