@@ -1,9 +1,7 @@
 /*
 EMAILJS
 */
-// template_u04ukmc
-// service_4uyxiya
-// user_henYbMMsP2fWcBJobMWCO
+
 
 
 let isModalOpen = false;
@@ -39,12 +37,8 @@ function contact(event){
     const success = document.querySelector('.modal__overlay--success');
     loading.classList += " modal__overlay--visible"
     emailjs
-        .sendForm(
-            'service_4uyxiya',
-            'template_u04ukmc',
-            event.target,
-            'user_henYbMMsP2fWcBJobMWCO'
-        ).then(()=>{
+        .sendForm('contact_service', 'contact_form', event.target, '5tgWNHPdPSlI3dLba')
+        .then(()=>{
             loading.classList.remove("modal__overlay--visible");
             success.classList += " modal__overlay--visible";    
         }).catch(() =>{
